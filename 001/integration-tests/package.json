@@ -1,0 +1,11 @@
+{
+  "name": "integration-tests",
+  "version": "1.0.0",
+  "description": "detroit code conference sample",
+  "main": "src/runTests.ts",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
