@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "build",
+    "outDir": "build/src",
     "module": "commonjs",
     "target": "es6",
     "lib": ["es6"],

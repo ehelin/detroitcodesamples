@@ -1,9 +1,5 @@
 import {Server} from "hapi";
-import * as Mocha from 'mocha'
-import * as Chai from 'chai';
-import * as Sinon from 'sinon';
 import {expect} from 'chai';
-import {registerServerSingleApiSave} from "../singleApiSaveRoutes";
 
 describe('Single API routes', () => {
 
@@ -26,8 +22,6 @@ describe('Single API routes', () => {
 
                     server = new Server();
                     server.connection({ port: 3000, host: 'localhost' });
-
-                    registerServerSingleApiSave(server);
 
                     const response = await server.inject({
                                         method: 'POST',

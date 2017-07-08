@@ -6,13 +6,27 @@
   "scripts": {
     "test": "mocha",
     "build": "tsc -p .",
-    "start": "npm run build && node build/src/app.js"
+    "start": "node build/src/app.js"
   },
   "author": "Eric Helin",
   "license": "ISC",
   "dependencies": {
+    "@types/chai": "4.0.1",
+    "axios": "0.16.2",
     "@types/hapi": "16.0.0",
     "hapi": "16.1.0",
-    "typescript": "^2.1.5"
+    "@types/joi": "10.4.0",
+    "@types/mocha": "2.2.41",
+    "@types/node": "8.0.7",
+    "@types/sinon": "2.3.2",
+    "@types/sinon-chai": "2.7.28",
+    "chai": "4.0.2",
+    "mocha": "3.4.2",
+    "nock": "9.0.13",
+    "nodemon": "1.11.0",
+    "sinon": "2.3.6",
+    "sinon-chai": "2.11.0",
+    "ts-node": "3.1.0",
+    "typescript": "2.4.1"
   }
 }

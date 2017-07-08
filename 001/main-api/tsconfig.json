@@ -1,9 +1,14 @@
 {
-    "compilerOptions": {
-        "emitDecoratorMetadata": false,
-        "module": "commonjs",
-        "target": "es6",
-        "outDir": "build",
-        "rootDir": "./"
-    }
+  "compilerOptions": {
+    "outDir": "build/src",
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["es6"],
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "sourceMap": false
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
 }

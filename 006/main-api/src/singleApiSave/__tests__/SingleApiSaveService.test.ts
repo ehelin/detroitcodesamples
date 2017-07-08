@@ -1,14 +1,10 @@
 import {SingleSaveApiRequest} from "../SingleSaveApiRequest";
 import {singleApiSaveJSON} from "./singleApiSaveJSON";
 import {SingleApiSaveServiceImpl} from "../SingleApiSaveService";
-import {Server} from "hapi";
-import * as Mocha from 'mocha'
-import * as Chai from 'chai';
 import * as Sinon from 'sinon';
 import {expect, use} from 'chai';
 import * as sinon from 'sinon';
 import * as sinonChai from 'sinon-chai';
-import {SingleApiSaveService} from "../SingleApiSaveService";
 import SinonStub = Sinon.SinonStub;
 import {SingleApiSaveRepository} from "../SingleApiSaveRepository";
 

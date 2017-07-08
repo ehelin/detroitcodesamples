@@ -55,32 +55,6 @@ describe('Single API routes', () => {
                     expect(JSON.parse(response.payload)).to.eql(request);
                 });
             });
-
-            describe('500', () => {
-
-                it('rejects in case of error', async () => {
-                    //setup server -------------------------------------
-                    mockSingleApiSaveService = {
-                        save: sinon.stub().returns(Promise.reject(new Error('something broke'))),
-                    }
-
-                    server = new Server();
-                    server.connection({ port: 3000, host: 'localhost'});
-
-                    registerServerSingleApiSave(server, mockSingleApiSaveService);
-
-                    //make call ----------------------------------------
-                    const response = await server.inject({
-                        method: 'POST',
-                        url: '/singleApiSave',
-                        payload: request,
-                    });
-
-                    //validate ------------------------------------------
-                    expect(response.statusCode).to.eql(500);
-                    expect(mockSingleApiSaveService.save).to.be.calledWith(requestObject);
-                });
-            });
         });
     });
 });
