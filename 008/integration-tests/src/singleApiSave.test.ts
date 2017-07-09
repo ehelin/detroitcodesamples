@@ -1,9 +1,5 @@
 import axios from 'axios';
-import * as Mocha from 'mocha'
-import * as Chai from 'chai';
-import * as Sinon from 'sinon';
 import {expect} from 'chai';
-import {AxiosResponse} from "axios";
 
 describe('/singleApiSave', () => {
     describe('POST', () => {
